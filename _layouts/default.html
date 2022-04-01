@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    {% include head-custom.html %}
+
+    {% seo %}
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a id="a-title" href="{{ '/' | relative_url }}">
+                <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            </a>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+            <section id="menu">
+                <a href="" class="btn"><i class="fa-solid fa-house"></i>&nbsp; Почетна</a>
+                <a href="about.html" class="btn"><i class="fa-solid fa-users"></i>&nbsp; За нас</a>
+                &nbsp;
+                <a href="#" class="btn"><i class="fa-brands fa-discord"></i>&nbsp; Discord</a>
+            </section>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main_content">
+            {{ content }}
+        </section>
+    </div>
+</body>
+
+</html>
