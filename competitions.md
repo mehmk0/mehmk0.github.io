@@ -1,5 +1,5 @@
 ---
-layout: ddefault
+layout: default
 ---
 
 # Натпревари
