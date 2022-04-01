@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-    {% include head-custom.html %}
 
+    {% include head-custom.html %}
     {% seo %}
 </head>
 
@@ -22,10 +22,13 @@
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
             <section id="menu">
-                <a href="" class="btn"><i class="fa-solid fa-house"></i>&nbsp; Почетна</a>
-                <a href="about.html" class="btn"><i class="fa-solid fa-users"></i>&nbsp; За нас</a>
+                <a href="{{ '/' | relative_url }}" class="btn"><i class="fa-solid fa-house"></i>&nbsp; Почетна</a>
+                <a href="{{ '/' | relative_url }}about.html" class="btn"><i class="fa-solid fa-users"></i>&nbsp; За нас</a>
+                <a href="{{ '/' | relative_url }}competitions.html" class="btn"><i class="fa-solid fa-flag"></i>&nbsp; Натпревари</a>
                 &nbsp;
-                <a href="#" class="btn"><i class="fa-brands fa-discord"></i>&nbsp; Discord</a>
+                <span style="float: right">
+                    <a href="#" class="btn"><i class="fa-brands fa-discord"></i>&nbsp; Discord</a>
+                </span>
             </section>
         </div>
     </header>
